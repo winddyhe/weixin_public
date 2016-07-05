@@ -1,0 +1,39 @@
+{
+    "wxAppID":"123",
+    "wxAppSecret":"455",
+    "wxToken":"123",
+
+    "wxMenu":
+    {
+        "button":
+        [
+            {
+                "name":"关于我",
+                "sub_button":
+                [
+                    { "type": "view", "name":"名片", "url":"http://www.baidu.com" },
+                    { "type": "view", "name":"博客", "url":"http://www.qq.com"    },
+                    { "type": "view", "name":"客服", "url":"http://www.sina.com"  }
+                ]
+            },
+            {
+                "name":"菜单1",
+                "sub_button":
+                [
+                    { "type": "view", "name":"子菜单1", "url":"http://www.baidu.com" },
+                    { "type": "view", "name":"子菜单2", "url":"http://www.qq.com"    },
+                    { "type": "view", "name":"子菜单3", "url":"http://www.sina.com"  }
+                ]
+            },
+            {
+                "name":"菜单2",
+                "sub_button":
+                [
+                    { "type": "view", "name":"子菜单1", "url":"http://www.baidu.com" },
+                    { "type": "view", "name":"子菜单2", "url":"http://www.qq.com"    },
+                    { "type": "view", "name":"子菜单3", "url":"http://www.sina.com"  }
+                ]
+            }
+        ]
+    }
+}
