@@ -1,7 +1,7 @@
 {
-    "wxAppID":"123",
-    "wxAppSecret":"455",
-    "wxToken":"123",
+    "wxAppID":"wx3de8386faa66214d",
+    "wxAppSecret":"9714c451a52fa185ca046e97a54ee181",
+    "wxToken":"winddyWeiXinCourse",
 
     "wxMenu":
     {
@@ -35,5 +35,6 @@
                 ]
             }
         ]
-    }
+    },
+    "logoPath":"./wx_logo.png"
 }
