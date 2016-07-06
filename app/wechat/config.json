@@ -13,7 +13,7 @@
                 [
                     { "type": "view", "name":"名片", "url":"http://www.baidu.com" },
                     { "type": "view", "name":"博客", "url":"http://www.qq.com"    },
-                    { "type": "view", "name":"客服", "url":"http://www.sina.com"  }
+                    { "type": "click", "name":"联系我们", "key":"V1001_ConnectUs"   }
                 ]
             },
             {
@@ -35,6 +35,5 @@
                 ]
             }
         ]
-    },
-    "logoPath":"./wx_logo.png"
+    }
 }
