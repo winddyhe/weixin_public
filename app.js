@@ -14,7 +14,9 @@ var cloudTest     = require('./app/leancloud/cloud_test.js');
 var wxApi         = require('./app/wechat/wxapi.js');
 var wxChat        = require('./app/wechat/wxchat.js');
 
-var app = express();
+var dbclient      = require('./app/mysql/db.js');
+
+var app = express(); 
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.query());
-
+   
 // 加载Leancloud函数
 app.use(cloudTest);
 
@@ -40,6 +42,12 @@ wxApi.create_menu();
 
 // 监听消息微信客户端发过来的消息
 wxChat.listening_message(app);
+
+// 配置数据库
+dbclient.init(app);
+
+var userDao = require('./app/mysql/dao/userDao.js');
+userDao.createUser(app, 1003, 'zjj', '123456');
 
 /////////////////////////////////////////////////////////////////////////////
 

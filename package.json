@@ -12,10 +12,14 @@
     "domain": "0.0.1",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "generic-pool": "^2.4.2",
     "leanengine": "^0.4.2",
     "morgan": "~1.6.1",
+    "mysql": "^2.11.1",
     "serve-favicon": "~2.3.0",
+    "tsd": "^0.6.5",
     "wechat": "^2.0.3",
-    "wechat-api": "^1.28.0"
+    "wechat-api": "^1.28.0",
+    "wechat-oauth": "^1.1.1"
   }
 }
