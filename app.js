@@ -47,7 +47,7 @@ wxChat.listening_message(app);
 dbclient.init(app);
 
 var userDao = require('./app/mysql/dao/userDao.js');
-userDao.createUser(app, 1003, 'zjj', '123456');
+//userDao.createUser(app, 1003, 'zjj', '123456');
 
 /////////////////////////////////////////////////////////////////////////////
 
